@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+#title {
+    background-color: rgba(4, 25, 48, 0.918);
+    color: white;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.colored-title {
+    color: rgba(4, 17, 31, 0.918);
+    font-weight: bold;
+    font-size: large;
+}
+
+p, label {
+    color: rgba(53, 46, 88, 0.932);
+}
+
+.banner {
+    padding: 30px;
+}
+
+.banner, #title {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 2;
+}
+
+fieldset {
+    border-style: none;
+}
+
+form {
+    padding: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    color: lightgray;
+    padding: 20px;
+    margin: 10px;
+}
+
+
+
+#second-hr {
+    border: 1px solid rgba(4, 25, 48, 0.918);
+}
+
+::-webkit-input-placeholder { 
+    text-align:right; 
+}
+
+#info {
+    margin: 5px;
+    padding: 5px;
+}
+
+#contact-title {
+    padding-top: 30px;
+}
+
+#first-hr {
+    margin-left: 0;
+    margin-right: 0;
+    border-top: 4px solid rgba(4, 25, 48, 0.918);
+    border-bottom: 2px solid rgba(4, 25, 48, 0.918);
+    height: 10px;
+    border-left: none;
+    border-right: none;
+}
+
+#state {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+     appearance: none;
+}
+
+#zip {
+    width: 30%;
+}
+
+#state:focus, input:focus, #textarea:focus{
+    border: 2px solid rgba(4, 25, 48, 0.918) !important;
+    outline: none !important;
+}
+
+#state:focus, input[type='text']:focus, input[type='tel']:focus, input[type='email']:focus {
+    background-color: aliceblue !important;
+}
+
+textarea {
+    resize: none;
+    height: 90px;
+    margin-top: 17px;
+}
+
+@media(min-width: 320px){
+    
+
+    .form {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #state, input:not([type='checkbox']):not([type='radio']), textarea{
+        padding: 20px;
+        width: 100%;
+        margin-top: 10px;
+    margin-bottom: 10px;
+        border-radius: 3px;
+        background-color: rgba(223, 223, 223, 0.993);
+        opacity: 50%;
+        border-style: none;
+        transition: 0.5s;
+    }
+
+   
+
+
+    .contact {
+        padding-bottom: 20px;
+        
+    }
+
+    .contact label {
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+    
+    .contact > div > label {
+        padding-right: 10px;
+        padding-top: 10px;
+        margin-bottom: 7px;
+        float: left;
+        clear: both;
+    }
+
+    .newsletter {
+        padding-top: 20px;
+        background-color: aliceblue;
+    }
+
+    .newsletter label {
+        display: inline-block;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }   
+
+    
+    button {
+        background-color: rgba(34, 172, 172, 0.918); /* Green */
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        cursor: pointer;
+        padding: 10px;
+        width: 100%;
+        border-radius: 2px;
+    }
+
+    footer {
+        font-style: italic;
+        /* font-size: 12px;
+        margin-left: 16px; */
+    }
+    
+}
+
+@media(min-width: 768px){
+
+    .form {
+        width: 760px; 
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    #state, input:not([type='checkbox']):not([type='radio']){
+        padding: 16px;
+        width: 60%;
+        border-radius: 3px;
+        background-color: rgba(223, 223, 223, 0.993);
+        opacity: 50%;
+        border-style: none;
+        float: right;
+    }
+
+    .contact label {
+       display: inline-flex;
+       flex-wrap: wrap;
+       margin-right: 90px;
+       text-align: left;
+    }
+
+    #first-hr {
+        width: 100%;
+    }
+
+    #textarea {
+        width: 100%;
+        border-style: none;
+    }
+}
+
+
