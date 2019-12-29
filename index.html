@@ -38,15 +38,15 @@
                         </div>
                         <div>
                             <label for="phone" class="item">Phone Number</label>
-                            <input type="tel" id="phone" name="phone_number">
+                            <input type="tel" id="phone" name="phone_number" placeholder="123-456-7889">
                         </div>
                         <div>
                             <label for="address" class="item">Street Number</label>
-                            <input type="text" id="address" name="user_adress">
+                            <input type="text" id="address" name="user_adress" placeholder="123 Mount Vernon ">
                         </div>
                         <div>
                             <label for="city" class="item">City</label>
-                            <input type="text" id="city" name="city">
+                            <input type="text" id="city" name="city" placeholder="Bronx">
                         </div>
                         
                         <div>
@@ -60,34 +60,31 @@
                         </div>
                         
                         <div>
-                            <label for="zip">Zip Code</label><input id="zip" name="zip" type="text" pattern="[0-9]*"><br>
+                            <label for="zip">Zip Code</label><input id="zip" name="zip" type="text" pattern="[0-9]*" placeholder="10001"><br>
                         </div>
                     </div>
                     
-                    </fieldset>
+                </fieldset>
                     
                 <hr id="second-hr">
                     
                <div class="newsletter">
-                    
-                        <fieldset>
-                                <!-- <legend><h3 class="colored-title">Newsletter</h3></legend> -->
-                                <legend class="colored-title">Newsletter</legend><br>
+                        <fieldset> 
+                            <legend class="colored-title">Newsletter</legend><br>
                                 <p>Select the newsletters you would like to receive</p><br>
+
                                 <div><input type="checkbox" id="html_news" name="html_news"><label for="html_news">HTML News</label><br></div>
                                 <div><input type="checkbox" id="css_news" name="css_news"><label for="css_news">CSS News</label><br></div>
                                 <div><input type="checkbox" id="js_news" name="js_news"><label for="js_news">Javascript News</label><br></div>
-                        </fieldset>
                         
-                    
-                        <fieldset>
                                 <p>Newsletter format</p><br>
-                            <div><input type="radio" id="html" name="format"><label for="html">HTML</label><br></div>
-                            <div><input type="radio" id="text" name="format"><label for="text">Plain Text</label><br></div>
+                                
+                                <div><input type="radio" id="html" name="format"><label for="html">HTML</label><br></div>
+                                <div><input type="radio" id="text" name="format"><label for="text">Plain Text</label><br></div>
+                        
+                                <label for="textarea">Other topics you'd like to hear about</label>
+                                <textarea id="textarea"></textarea>
                         </fieldset>
-                    <label for="textarea">Other topics you'd like to hear about</label>
-                            <textarea id="textarea"></textarea>
-        
                     <button type="submit">Sign Up</button>
         
                     <footer>Copyright The Code Review</footer>
